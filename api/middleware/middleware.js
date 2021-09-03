@@ -15,7 +15,7 @@ const logger = (req,res,next) =>{
 const validateUserId = async ( req, res, next) => {
    try{
      const user = await User.getById(req.params.id);
-     if(!user){ res.status(404).json ({message: "no such user" }) }
+     if(!user){ res.status(404).json ({message: "user not found" }) }
      //Assign user object to req.user, call next
      else {
        req.user = user;
