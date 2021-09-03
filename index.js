@@ -1,5 +1,6 @@
 // require your server and launch it
-const server = require('./api/server');
-server.listen(5000, () => {
-    console.log('\n* Server Running on http://localhost:5000 *\n');
-  });
+const server = require('./api/server.js');
+
+server.listen(6000, () => {
+  console.log('\n* Server Running on http://localhost:6000 *\n');
+});
